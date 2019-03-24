@@ -2944,7 +2944,7 @@ input, select, textarea {
 		@media screen and (max-width: 736px) {
 
 			#header {
-				padding: 4em 0 0.1em 0 ;
+				padding: 4em 0 0.1em 0;
 			}
 
 				#header nav {
@@ -2956,6 +2956,13 @@ input, select, textarea {
 						background-size: 1.5em 1.5em;
 					}
 
+		}
+
+		@media screen and (max-width: 592px) {
+
+			#header {
+				padding: 1em 0 0.1em 0 ;
+			}
 		}
 
 /* Menu */
