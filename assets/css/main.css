@@ -206,7 +206,7 @@ input, select, textarea {
 	h2, h3, h4, h5, h6 {
 		font-weight: 900;
 		line-height: 1.5;
-		margin: 0 0 2em 0;
+		margin: 0 0 0.8em 0;
 	}
 
 		h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -1873,7 +1873,7 @@ input, select, textarea {
 
 	ul {
 		list-style: disc;
-		margin: 0 0 2em 0;
+		padding: 0 0 2em 0;
 		padding-left: 1em;
 	}
 
@@ -3155,7 +3155,7 @@ input, select, textarea {
 
 	#footer {
 		background-color: #f6f6f6;
-		margin: 6em 0 0 0;
+		margin: 0 0 0 0;
 	}
 
 		#footer > .inner {
@@ -3171,6 +3171,9 @@ input, select, textarea {
 			-webkit-flex-direction: row;
 			-ms-flex-direction: row;
 			flex-direction: row;
+			width: 100%;
+	    max-width: 760px;
+	    padding: 0 0 0 10em;
 		}
 
 			#footer > .inner > * > :last-child {
@@ -3189,8 +3192,7 @@ input, select, textarea {
 
 			#footer > .inner .copyright {
 				width: 100%;
-				padding: 0;
-				margin-top: 2em;
+				padding: 2em 0 2em 0;
 				list-style: none;
 				font-size: 0.8em;
 				color: rgba(88, 88, 88, 0.5);
@@ -3218,7 +3220,7 @@ input, select, textarea {
 
 			#footer {
 				padding: 0 0 0 0 ;
-				margin: 15em 0 0 0;
+				margin: 0 0 0 0;
 			}
 
 				#footer > .inner section:nth-child(1) {
@@ -3244,6 +3246,13 @@ input, select, textarea {
 				width: calc(33% - 2.5em);
 				margin-left: 2.5em;
 			}
+}
+
+			@media screen and (max-width: 920px) {
+
+				#footer > .inner {
+					padding: 0 4em 0 4em;
+				}
 
 		}
 
@@ -3277,6 +3286,14 @@ input, select, textarea {
 
 		}
 
+		@media screen and (max-width: 592px) {
+
+			#footer > .inner {
+				padding: 0 1.25em;
+			}
+
+		}
+
 		@media screen and (max-width: 480px) {
 
 				#footer > .inner .copyright li {
@@ -3294,6 +3311,11 @@ input, select, textarea {
 		}
 
 /* Wrapper */
+
+	#wrapper	{
+		min-height: 100vh;
+		overflow: auto;
+	}
 
 	#wrapper > * > .inner {
 		width: 100%;
